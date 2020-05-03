@@ -1,0 +1,799 @@
+/* ----- Specification ----- */
+
+body {
+	font-family: 'Roboto', sans-serif;
+	padding: 0;
+	margin: 0;
+	color: #272731;
+	background: #fff;
+}
+
+.container {
+	width: 1296px;
+	margin: 0 auto;
+}
+
+div, p, form, input, textarea, a, span, button, ul, li {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	line-height: 1.4em;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	font-weight: 900;
+	text-transform: uppercase;
+	line-height: 1.15em;
+	text-align: center;
+}
+
+h2 {
+	font-size: 40px;
+	letter-spacing: 0.08em;
+}
+
+h3 {
+	font-size: 25px;
+	letter-spacing: 0.12em;
+	color: #576671;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+a, button, input {
+	transition: all 0.5s ease;
+}
+
+button {
+	cursor: pointer;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active {
+	outline: none;
+}
+
+
+.d-flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
+/* .btn:active {
+	box-shadow: 0 0 20px rgba(0,0,0,0.3) inset;
+} */
+
+
+/* ----- First screen ----- */
+
+
+.header {
+	background: #2c0903 url(../img/bg_opt.jpg) no-repeat top center / cover;
+	height: 100vh;
+	position: relative;
+	z-index: 1;
+}
+
+.header__overlay {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.header__wrap {
+	flex-direction: column;
+	justify-content: space-between;
+	height: 80vh;
+	z-index: 3;
+	position: relative;
+}
+
+.navigation {
+	align-items: center;
+	padding-top: 30px;
+}
+
+.logo__img {
+	width: 180px;
+}
+
+.menu__link {
+	color: #CBE3FF;
+	text-transform: uppercase;
+	font-weight: 900;
+	padding: 8px 20px;
+	border-radius: 5px;
+}
+
+.menu__link:hover {
+	color: #fff;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.email {
+	color: #CBE3FF;
+	padding-bottom: 2px;
+	transition: none;
+}
+
+.email:hover {
+	border-bottom: 1px dotted #CBE3FF;
+}
+
+.offer {
+	text-align: center;
+	color: #fff;
+}
+
+.offer__title {
+	font-size: 55px;
+	letter-spacing: 0.04em;
+}
+
+.offer__text {
+	font-size: 30px;
+	font-weight: 100;
+	letter-spacing: 0.12em;
+	margin-top: 10px;
+}
+
+.header__btn {
+	width: 190px;
+	height: 50px;
+	border-radius: 100px;
+	border: 1px solid #fff;
+	color: #fff;
+	display: block;
+	text-align: center;
+	font-weight: 900;
+	padding-top: 13px;
+	margin: 0 auto;
+}
+
+.header__btn:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.header__btn:active {
+	box-shadow: 0 0 20px rgba(0,0,0,0.3) inset;
+	transition: all 0.2s ease;
+} 
+
+
+/* ----- Second screen [Обо мне] ----- */
+
+
+.about {
+	padding: 60px 0 50px;
+}
+
+.about__wrapper {
+	margin-top: 60px;
+}
+
+.merits {
+	margin-top: 40px;
+	
+}
+
+.merits__list {
+	margin-top: 15px;
+	border-top: 3px solid rgba(57, 115, 127, 0.2);
+	border-bottom: 3px solid rgba(57, 115, 127, 0.2);
+	border-radius: 30px;
+	padding: 20px 20px;
+}
+
+.menu__list_bottom {
+	margin-top: 30px;
+	border-left: 3px solid rgba(57, 115, 127, 0.2);
+	border-right: 3px solid rgba(57, 115, 127, 0.2);
+	border-top: none;
+	border-bottom: none;
+	border-radius: 30px;
+}
+
+.merits__item {
+	padding-top: 110px;
+	width: 200px;
+	text-align: center;
+}
+
+.merits__desc {
+	margin-top: 10px;
+	color: #87949e;
+	font-size: 12px;
+	letter-spacing: 0.025em;
+}
+
+.merits__item_html {
+	background: url(../img/html_5_color.png) no-repeat top center;
+}
+
+.merits__item_css {
+	background: url(../img/css3_color.png) no-repeat top center;
+}
+
+.merits__item_bootstrap {
+	background: url(../img/bootstrap_color.png) no-repeat top center;
+}
+
+.merits__item_wordpress {
+	background: url(../img/wordpress_color.png) no-repeat top center;
+}
+
+.merits__item_jq {
+	background: url(../img/jquery_color.png) no-repeat center 22px;
+}
+
+.merits__item_ps {
+	background: url(../img/adobe_photoshop_color.png) no-repeat top center;
+}
+
+.merits__item_figma {
+	background: url(../img/figma.png) no-repeat top center;
+	background-size: 96px auto;
+}
+
+.merits__item_xd {
+	background: url(../img/adobe_xd_color.png) no-repeat top center;
+}
+
+.merits__item_js {
+	background: url(../img/javascript_color.png) no-repeat top center;
+}
+
+.merits__item_modx {
+	background: url(../img/modx_color.png) no-repeat center 22px;
+}
+
+
+/* ----- Third screen [Преимущества] ----- */
+
+
+.privilege {
+	padding: 100px 0 100px;
+	background: #cbe3ff;
+}
+
+.privilege__list {
+	font-size: 25px;
+	font-weight: 300;
+	flex-wrap: wrap;
+	margin-top: 60px;
+}
+
+.privilege__item {
+	width: 20%;
+	padding: 0 20px;
+	display: flex;
+}
+
+.privilege__item i {
+	font-size: 60px;
+	padding-right: 20px;
+}
+
+
+/* ----- Fourth section [Работы] ----- */
+
+
+.works {
+	padding-top: 100px;
+}
+
+.works__slider {
+	position: relative;
+	margin: 60px auto 0;
+	width: 1000px;
+	height: 740px;
+}
+
+.works__img {
+	object-fit: cover;
+	width: 1000px;
+	height: 600px;
+	border-radius: 30px 30px 0 0;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.works__wrap {
+	border-radius: 0 0 30px 30px;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+	padding: 10px 30px;
+	margin-top: 10px;
+	align-items: center;
+	min-height: 78px;
+}
+
+.works__subtitle {
+	margin-top: 10px;
+}
+
+.works_desk {
+	font-size: 16px;
+	font-weight: 900;
+	margin-bottom: 5px;
+}
+
+.works__item {
+	font-size: 14px;
+}
+
+.works__link {
+	display: block;
+	width: 200px;
+	height: 50px;
+	border-radius: 100px;
+	border: 1px solid #39737f;
+	background: #39737f;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 10px;
+	font-weight: 900;
+	letter-spacing: 0.25em;
+	font-size: 23px;
+}
+
+.works__link:hover {
+	background: none;
+	color: #39737f;
+}
+
+.works__link:active {
+	box-shadow: 0 0 20px rgba(0,0,0,0.3) inset;
+	transition: all 0.1s ease;
+}
+
+.works__prev, .works__next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	color: #39737f;
+	font-size: 50px;
+	transition: 0.6s ease;
+	left: -70px;
+	line-height: 0;
+}
+
+.works__next {
+	left: 1025px;
+}
+  
+.works__prev:hover,
+.works__next:hover {
+	color: #264f57;
+}
+
+.works__dots {
+	text-align: center;
+}
+
+.works__dot {
+	cursor: pointer;
+	height: 16px;
+	width: 16px;
+	margin: 0 2px;
+	background-color: #ddd;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.action,
+.works__dot:hover {
+	background-color: #39737f;
+}
+  
+.works__slider .works__slide {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+	opacity: .4
+	}
+	to {
+	opacity: 1
+	}
+}
+
+@keyframes fade {
+	from {
+	opacity: .4
+	}
+	to {
+	opacity: 1
+	}
+}
+
+
+/* ----- Fifth screen [Контакты] ----- */
+
+
+.contact {
+	padding: 100px 0 100px;
+}
+
+.contact_wrap {
+	align-items: center;
+	margin-top: 70px;
+	justify-content: space-around;
+}
+
+.contact__i {
+	align-items: center;
+}
+
+.contact__name {
+	margin-left: 20px;
+}
+
+.contact__subtitle {
+	text-align: left;
+	font-size: 30px;
+	
+}
+
+.contact__desc {
+	letter-spacing: 0.1em;
+}
+
+.contact__img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.contact__item {
+	padding-bottom: 5px;
+}
+
+.contact__link {
+	font-size: 18px;
+	color: #272731;
+	border-bottom: 1px dotted #fff;
+}
+
+.contact__link:hover {
+	border-bottom: 1px dotted #272731;
+	color: #272731;
+}
+
+.contact__link i {
+	width: 30px;
+	text-align: center;
+}
+
+/* ----- Sixth screen [] ----- */
+/* ----- Seventh screen [] ----- */
+/* ----- Eighth screen [] ----- */
+/* ----- Ninth screen [] ----- */
+
+
+/* ----- Footer ----- */
+
+
+.footer {
+	padding: 50px 0;
+	background: #2c0903;
+	color: #cbe3ff;
+	font-weight: 100;
+}
+
+.footer__wrap {
+	align-items: center;
+	justify-content: space-around;
+}
+
+.footer__btn {
+	color: #cbe3ff;
+	font-size: 50px;
+}
+
+.footer__btn:hover {
+	color: #fff;
+}
+
+/* ------ Media Queries ------ */
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 950px;
+	}
+	.privilege__list {
+		font-size: 16px;
+	}
+	.privilege__item {
+		align-items: center;
+	}
+	.works__slider {
+		width: 800px;
+	}
+	.works__img {
+		width: 800px;
+		height: 487px;
+	}
+	.works__next {
+		left: 825px;
+	}
+}
+
+/* 768-992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 700px;
+	}
+	.email {
+		display: none;
+	}
+	.offer__title {
+		font-size: 52px;
+	}
+	.offer__text {
+		font-size: 28px;
+	}
+	h2 {
+		font-size: 36px;
+	}
+	.merits__list, .privilege__list {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.merits__item:nth-child(n+4) {
+		margin-top: 20px;
+	}
+	.privilege__item {
+		width: 200px;
+	}
+	.privilege__item:nth-child(n+4) {
+		margin-top: 30px;
+	}
+	.works__slider {
+		width: 600px;
+		height: 510px;
+	}
+	.works__img {
+		width: 600px;
+		height: 365px;
+	}
+	.works__next {
+		left: 625px;
+	}
+	.contact__name {
+		width: 240px;
+	}
+}
+
+/* 576-768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 520px;
+	}
+	.navigation {
+		flex-direction: column;
+	}
+	.menu {
+		margin-top: 30px;
+	}
+	.offer__title {
+		font-size: 38px;
+	}
+	.offer__text {
+		font-size: 22px;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	.merits__item:nth-child(n+3) {
+		margin-top: 20px;
+	}
+	.privilege__item {
+		width: 200px;
+	}
+	.privilege__item:nth-child(n+3) {
+		margin-top: 35px;
+	}
+	.privilege__title {
+		width: 300px;
+		margin: 0 auto;
+		line-height: 1.2em;
+	}
+	.works__slider {
+		width: 420px;
+		height: 405px;
+	}
+	.works__img {
+		width: 420px;
+		height: 255px;
+	}
+	.works__prev, .works__next {
+		top: 40%;
+		left: -55px;
+	}
+	.works__next {
+		left: 431px;
+	}
+	.works__link {
+		width: 128px;
+		font-size: 20px;
+		padding-top: 12px;
+	}
+	.works__item {
+		font-size: 13px;
+	}
+	.works__wrap {
+		padding: 10px 20px;
+	}
+	.contact_wrap {
+		flex-direction: column;
+	}
+	.contact__name {
+		width: 275px;
+	}
+	.contact__list {
+		margin-top: 30px;
+	}
+	.contact__link {
+		font-size: 22px;
+	}
+	.footer__btn {
+		display: none;
+	}
+}
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+	h2 {
+		font-size: 25px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	.menu {
+		display: none;
+	}
+	.merits__item:nth-child(n+2) {
+		margin-top: 20px;
+	}
+	.privilege__item:nth-child(n+2) {
+		margin-top: 35px;
+	}
+	.merits__list, .privilege__list {
+		flex-direction: column;
+		align-items: center;
+	}
+	.merits__item {
+		padding-top: 100px;
+	}
+	.privilege__item:nth-child(5) {
+		padding-left: 0;
+	}
+	.privilege__title {
+		width: 280px;
+	}
+	.works__slider {
+		width: 90%;
+		margin-bottom: 40px;
+	}
+	.works__img {
+		width: 100%;
+		height: 162px;
+	}
+	.works__wrap {
+		flex-direction: column;
+		height: 134px;
+	}
+	.works__block {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.works__subtitle {
+		height: 40px;
+	}
+	.works__prev, .works__next {
+		display: none;
+	}
+	.contact__i {
+		flex-direction: column;
+	}
+	.contact__subtitle {
+		text-align: center;
+		font-size: 21px;
+		margin-top: 10px;
+	}
+	.contact__name {
+		width: 90%;
+	}
+	.contact__desc {
+		letter-spacing: 0.02em;
+		text-align: center;
+	}
+	.contact__link {
+		flex-direction: column;
+		align-items: center;
+		font-size: 16px;
+	}
+	.contact__item {
+		margin-bottom: 20px;
+	}
+	.contact__link i {
+		font-size: 50px;
+		width: auto;
+	}
+	.footer__wrap {
+		flex-direction: column;
+	}
+	.copyright {
+		margin-top: 10px;
+	}
+	.copyright span {
+		display: none;
+	}
+	
+}
+
+/* 470-576px for slider*/
+@media screen and (max-width: 576px) {
+	.works__img {
+		height: 280px;
+	}
+	.works__slider {
+		width: 90%;
+		margin-bottom: 110px;
+	}
+}
+
+/* 400-470px for slider*/
+@media screen and (max-width: 470px) {
+	.works__img {
+		height: 230px;
+	}
+	.works__slider {
+		width: 90%;
+		margin-bottom: 60px;
+	}
+}
+
+/* 320-400px for slider*/
+@media screen and (max-width: 400px) {
+	.works__img {
+		height: 196px;
+	}
+	.works__slider {
+		width: 90%;
+		margin-bottom: 30px;
+	}
+}
